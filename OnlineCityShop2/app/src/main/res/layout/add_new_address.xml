@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Enter Address"
+            android:textColor="@color/purple"
+            android:textSize="25dp"
+            android:fontFamily="@font/serif_family"/>
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street/Lane"
+            android:textColor="@color/gray_purple_edittext"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/gray_purple"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:textColor="@color/gray_purple_edittext"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/gray_purple"/>
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State"
+            android:textColor="@color/gray_purple_edittext"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/gray_purple"/>
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:textColor="@color/gray_purple_edittext"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/gray_purple"/>
+
+        <EditText
+            android:id="@+id/pin_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pin Code"
+            android:inputType="number"
+            android:textColor="@color/gray_purple_edittext"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/gray_purple"/>
+
+        <EditText
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone No"
+            android:inputType="phone"
+            android:textColor="@color/gray_purple_edittext"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/gray_purple"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Cancel"
+                android:background="@drawable/login_button"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textSize="20dp"
+                android:textColor="@color/purple"
+                android:fontFamily="@font/serif_family"/>
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Confirm"
+                android:background="@drawable/login_button"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/serif_family"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

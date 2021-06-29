@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/shop_banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/fruits"
+                android:scaleType="centerCrop"
+                android:elevation="5dp"
+                android:background="@drawable/rounded_bh"
+                android:outlineProvider="background"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/shop_name_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:rating="4.3"
+                        android:stepSize="0.1"
+                        android:isIndicator="true"
+                        android:progressTint="@color/purple"
+                        android:secondaryProgressTint="#D8D8D8"
+                        />
+
+                    <TextView
+                        android:id="@+id/rating_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2 (25K)"
+                        android:textSize="13dp"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/serif_family"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Shop Name"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple"
+                    android:fontFamily="@font/serif_family"
+                    />
+                <TextView
+                    android:id="@+id/shop_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="All kind of fruits \nand vegetables are available"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/serif_family"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:id="@+id/manage_details"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_bh"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_online_shopping"
+                    android:backgroundTint="@color/purple"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Manage\nDetails"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/serif_family"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/manage_product"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_bh"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_ketchup"
+                    android:backgroundTint="@color/purple"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Manage\nProducts"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/serif_family"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_orders"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_bh"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_shopping"
+                    android:backgroundTint="@color/purple"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="New\nOrders"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/serif_family"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/old_orders"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_bh"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_shopping"
+                    android:backgroundTint="@color/purple"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Previous\nOrders"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/serif_family"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

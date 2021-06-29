@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/serif_family</item>
+    </style>
+
+    <declare-styleable name="CustomView">
+        <attr name="android:color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="colorFirst" format="color"/>
+        <attr name="colorSecond" format="color"/>
+        <attr name="colorThird" format="color"/>
+        <attr name="radius" format="float"/>
+    </declare-styleable>
+</resources>

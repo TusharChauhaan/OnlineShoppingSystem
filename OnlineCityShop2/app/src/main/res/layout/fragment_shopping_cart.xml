@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCartFragment">
+
+    <LinearLayout
+        android:id="@+id/parent_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="70dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Cart Contains"
+                        android:textSize="15dp"
+                        android:textColor="@color/purple"
+                        android:textFontWeight="1000"
+                        android:fontFamily="@font/serif_family"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Total Items"
+                            android:textSize="15dp"
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/serif_family"/>
+                        <TextView
+                            android:id="@+id/total_items"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="5"
+                            android:textSize="15dp"
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/serif_family"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Total Price"
+                            android:textSize="15dp"
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/serif_family"/>
+                        <TextView
+                            android:id="@+id/total_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="220"
+                            android:textSize="15dp"
+                            android:textColor="@color/gray"
+                            android:drawableStart="@drawable/ic_india_rupee_currency_symbol"
+                            android:fontFamily="@font/serif_family"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="25dp"
+                        android:text="You can only buy from one seller in a single order"
+                        android:textSize="10dp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textFontWeight="1000"
+                        android:fontFamily="@font/serif_family"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="#efeeee"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Items in my cart"
+                        android:textSize="15dp"
+                        android:textColor="@color/gray"
+                        android:textFontWeight="1000"
+                        android:fontFamily="@font/serif_family"/>
+
+                    <LinearLayout
+                        android:id="@+id/items_list_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/place_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:text="Place Order"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/serif_family"
+                android:background="@drawable/login_button"
+                android:backgroundTint="@color/purple"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

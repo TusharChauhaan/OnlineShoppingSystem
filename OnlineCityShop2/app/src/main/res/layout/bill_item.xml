@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/item_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/fruits"
+        android:background="@drawable/white_card"
+        android:outlineProvider="background"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Item Name"
+            android:textSize="15dp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/serif_family"/>
+
+        <TextView
+            android:id="@+id/item_price_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:text="2 X Rs 220"
+            android:textSize="10dp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/serif_family"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:maxWidth="200dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="440"
+        android:textSize="25dp"
+        android:textColor="@color/pricegreen"
+        android:drawableStart="@drawable/ic_india_rupee_currency_symbol_big"
+        android:drawableTint="@color/pricegreen"
+        android:fontFamily="@font/serif_family"/>
+
+</RelativeLayout>

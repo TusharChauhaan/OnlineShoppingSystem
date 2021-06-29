@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/shop_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/fruits"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/white_card"
+                    android:outlineProvider="background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/shop_name_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop name"
+                        android:textSize="20dp"
+                        android:textColor="@color/purple"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/serif_family"/>
+
+                    <TextView
+                        android:id="@+id/shop_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="208, Purani Tehsil Road, Pindwara, Rajasthan, India"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="@color/gray"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/serif_family"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EFEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Address"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple"
+                    android:fontFamily="@font/serif_family"/>
+
+                <TextView
+                    android:id="@+id/consumer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bhavin Prajapat"
+                    android:textColor="@color/gray"
+                    android:textSize="18dp"
+                    android:textFontWeight="1000"
+                    android:fontFamily="@font/serif_family"/>
+
+                <TextView
+                    android:id="@+id/delivery_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="208, Purani Tehsil Road, Pindwara, Rajasthan, India"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/serif_family"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EFEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Date"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple"
+                    android:fontFamily="@font/serif_family"/>
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27-11-2020 05:15 AM"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/serif_family"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EFEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple"
+                    android:fontFamily="@font/serif_family"/>
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Order Status"
+                        android:textSize="15dp"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/serif_family"/>
+                    <TextView
+                        android:id="@+id/order_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Booked"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:fontFamily="@font/serif_family"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Payment Status"
+                        android:textSize="15dp"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/serif_family"/>
+                    <TextView
+                        android:id="@+id/payment_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Paid"
+                        android:textSize="15dp"
+                        android:textColor="@color/green"
+                        android:fontFamily="@font/serif_family"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EFEEEE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Order Items"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/serif_family"
+                android:textFontWeight="800"/>
+            <LinearLayout
+                android:id="@+id/order_items_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/gray"
+                android:showDividers="middle"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EFEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Details"
+                    android:textColor="@color/purple"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/serif_family"
+                    android:textFontWeight="1000"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Item Total"
+                        android:textSize="15dp"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/serif_family"/>
+                    <TextView
+                        android:id="@+id/item_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="220"
+                        android:textSize="15dp"
+                        android:textColor="@color/gray"
+                        android:drawableStart="@drawable/ic_india_rupee_currency_symbol"
+                        android:fontFamily="@font/serif_family"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Delivery Charge"
+                        android:textSize="15dp"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/serif_family"/>
+                    <TextView
+                        android:id="@+id/delivery_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="20"
+                        android:textSize="15dp"
+                        android:textColor="@color/gray"
+                        android:drawableStart="@drawable/ic_india_rupee_currency_symbol"
+                        android:fontFamily="@font/serif_family"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#efeeee"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Total Amount"
+                        android:textSize="15dp"
+                        android:textColor="#595959"
+                        android:fontFamily="@font/serif_family"/>
+                    <TextView
+                        android:id="@+id/total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="220"
+                        android:textSize="15dp"
+                        android:textColor="#595959"
+                        android:drawableTint="#595959"
+                        android:drawableStart="@drawable/ic_india_rupee_currency_symbol"
+                        android:fontFamily="@font/serif_family"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Total Items"
+                        android:textSize="15dp"
+                        android:textColor="#595959"
+                        android:fontFamily="@font/serif_family"/>
+                    <TextView
+                        android:id="@+id/item_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="9"
+                        android:textSize="15dp"
+                        android:textColor="#595959"
+                        android:fontFamily="@font/serif_family"/>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/cancel_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Cancel Order"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/serif_family"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/login_button"
+                    android:backgroundTint="@color/red"/>
+
+                <Button
+                    android:id="@+id/rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Give Rating"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/serif_family"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/login_button"
+                    android:backgroundTint="@color/purple"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

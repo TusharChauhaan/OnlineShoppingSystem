@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/shop_card"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/white_card"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/fruits"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/white_card"
+            android:outlineProvider="background"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="125dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fruit Bucket"
+                android:textSize="20dp"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:textFontWeight="900"
+                android:fontFamily="@font/serif_family"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Era Hypermart Fruits and Vegetables"
+                android:textSize="15dp"
+                android:fontFamily="@font/serif_family"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:maxLines="2"
+                android:minLines="2"
+                android:ellipsize="end"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:rating="4.3"
+                    android:stepSize="0.1"
+                    android:isIndicator="true"
+                    android:progressTint="@color/purple"
+                    android:secondaryProgressTint="#D8D8D8"
+                    />
+
+                <TextView
+                    android:id="@+id/rating_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.2 (25K)"
+                    android:textSize="13dp"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/serif_family"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

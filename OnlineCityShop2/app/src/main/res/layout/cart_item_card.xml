@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:contentPadding="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="9dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/item_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fruits"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/white_card"
+                    android:outlineProvider="background"/>
+
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="110dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:textColor="@color/purple"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/serif_family" />
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Era Hypermart Fruits and Vegetables"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/serif_family"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RS 450"
+                        android:textSize="20dp"
+                        android:textColor="@color/pricegreen"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/serif_family"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/dec_count"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/green_border_background"
+                        android:src="@drawable/ic_minus"
+                        android:tint="@color/pricegreen"
+                        />
+                    <TextView
+                        android:id="@+id/item_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:minWidth="30dp"
+                        android:background="@drawable/gray_border"
+                        android:src="@drawable/ic_add"
+                        android:text="123"
+                        android:textColor="#8E8E8E"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:fontFamily="@font/serif_family"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:textSize="15dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        />
+                    <ImageButton
+                        android:id="@+id/inc_count"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/green_border_background"
+                        android:src="@drawable/ic_add"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Delete"
+                    android:textSize="15dp"
+                    android:textAllCaps="false"
+                    android:textColor="#8a8a8a"
+                    android:textFontWeight="900"
+                    android:fontFamily="@font/serif_family"
+                    android:background="@drawable/gray_border"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

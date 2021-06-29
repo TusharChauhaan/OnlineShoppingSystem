@@ -1,0 +1,4 @@
+\Project\OnlineCityShop2\app\src\main\java\com\tushar\onlinecityshop
+Follow this path from current directory to view all java classes
+
+OnlineCityShop2 is the project folder need to be added in android studio.

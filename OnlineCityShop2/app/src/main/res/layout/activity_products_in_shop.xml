@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProductsInShop">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="5dp">
+                    <ImageView
+                        android:id="@+id/shop_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:src="@drawable/fruits"
+                        android:scaleType="centerCrop"
+                        android:elevation="5dp"
+                        android:background="@drawable/rounded_bh"
+                        android:outlineProvider="background"
+                        />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/shop_name_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RatingBar
+                            android:id="@+id/rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:rating="4.3"
+                            android:stepSize="0.1"
+                            android:isIndicator="true"
+                            android:progressTint="@color/purple"
+                            android:secondaryProgressTint="#D8D8D8"
+                            />
+
+                        <TextView
+                            android:id="@+id/rating_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.2 (25K)"
+                            android:textSize="13dp"
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/serif_family"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/shop_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Shop Name"
+                        android:textSize="20dp"
+                        android:textColor="@color/purple"
+                        android:fontFamily="@font/serif_family"
+                        />
+                    <TextView
+                        android:id="@+id/shop_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="All kind of fruits and \nvegetables are available"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/serif_family"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <GridLayout
+                android:id="@+id/grid_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2">
+
+
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

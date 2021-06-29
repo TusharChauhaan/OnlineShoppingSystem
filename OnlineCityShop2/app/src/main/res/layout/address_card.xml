@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/address_button"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/gray_border"
+        android:backgroundTintMode="add"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purani Tehsil Road\nPindwara, Rajasthan\nIndia\nPin 307022"
+            android:textSize="15dp"
+            android:maxLines="4"
+            android:minLines="4"
+            android:fontFamily="@font/serif_family"/>
+
+        <TextView
+            android:id="@+id/phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mo 7014316242"
+            android:textSize="15dp"
+            android:textFontWeight="1000"
+            android:maxLines="1"
+            android:fontFamily="@font/serif_family"
+            android:textColor="@color/purple"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

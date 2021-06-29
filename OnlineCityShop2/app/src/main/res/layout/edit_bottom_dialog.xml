@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Name"
+            android:textColor="@color/gray_purple_edittext"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/gray_purple"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/gray_purple_edittext"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/gray_purple"/>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="200dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Update"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="@font/serif_family"
+            android:backgroundTint="@color/purple"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

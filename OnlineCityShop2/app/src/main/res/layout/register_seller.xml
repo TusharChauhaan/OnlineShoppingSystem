@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:text="Shop Banner"
+                android:textColor="@color/purple"
+                android:textSize="15dp"
+                android:fontFamily="@font/serif_family"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/image_banner"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:padding="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_image"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/gray_border"
+                    android:outlineProvider="background"/>
+
+                <Button
+                    android:id="@+id/choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/gray_border"
+                    android:text="Choose"
+                    android:textSize="20dp"
+                    android:textColor="@color/gray"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/serif_family"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#efeeee"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Shop Details"
+                    android:textSize="15dp"
+                    android:textColor="@color/purple"
+                    android:fontFamily="@font/serif_family"/>
+
+                <EditText
+                    android:id="@+id/f_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Name"
+                    android:textColor="@color/gray_purple_edittext"
+                    android:textSize="20dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/serif_family"
+                    android:backgroundTint="@color/gray_purple"/>
+
+                <EditText
+                    android:id="@+id/f_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Description"
+                    android:textColor="@color/gray_purple_edittext"
+                    android:textSize="20dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/serif_family"
+                    android:backgroundTint="@color/gray_purple"/>
+
+                <EditText
+                    android:id="@+id/f_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Address"
+                    android:textColor="@color/gray_purple_edittext"
+                    android:textSize="20dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/serif_family"
+                    android:backgroundTint="@color/gray_purple"/>
+
+                <EditText
+                    android:id="@+id/f_service_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Service City"
+                    android:textColor="@color/gray_purple_edittext"
+                    android:textSize="20dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/serif_family"
+                    android:backgroundTint="@color/gray_purple"/>
+
+                <EditText
+                    android:id="@+id/f_contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="phone"
+                    android:hint="Contact No"
+                    android:textColor="@color/gray_purple_edittext"
+                    android:textSize="20dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/serif_family"
+                    android:backgroundTint="@color/gray_purple"/>
+
+                <EditText
+                    android:id="@+id/f_gst_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="GST No"
+                    android:textColor="@color/gray_purple_edittext"
+                    android:textSize="20dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/serif_family"
+                    android:backgroundTint="@color/gray_purple"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/f_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/green_border_background"
+                    android:textColor="@color/pricegreen"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/serif_family"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"/>
+                <Button
+                    android:id="@+id/f_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/gray_border"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/serif_family"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

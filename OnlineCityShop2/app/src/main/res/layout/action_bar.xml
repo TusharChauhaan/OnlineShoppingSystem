@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:elevation="5dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_address"/>
+            <LinearLayout
+                android:id="@+id/address_butoon"
+                android:clickable="true"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Address"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/purple"/>
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Avialable"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_bag"
+            android:drawableStart="@drawable/ic_magnifying_glass"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/purple"
+            android:elevation="5dp"
+            android:fontFamily="@font/serif_family"
+            android:hint="Search"
+            android:inputType="textWebEditText"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/purple"
+            android:imeOptions="actionSearch"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

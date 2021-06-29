@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/product_card_button"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/item_photo"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/juice"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:rating="4.3"
+                        android:stepSize="0.1"
+                        android:isIndicator="true"
+                        android:progressTint="@color/purple"
+                        android:secondaryProgressTint="#D8D8D8"
+                        />
+
+                    <TextView
+                        android:id="@+id/rating_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2 (25K)"
+                        android:textSize="13dp"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/serif_family"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="7dp"
+                    android:text="Product name"
+                    android:fontFamily="@font/serif_family"
+                    android:textSize="15dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textFontWeight="1000"
+                    android:textColor="@color/purple"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price "
+                        android:textColor="@color/gray"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/serif_family"/>
+
+                    <ImageView
+                        android:layout_width="3dp"
+                        android:layout_height="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/login_button"
+                        android:backgroundTint="@color/gray"/>
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:fontFamily="@font/serif_family"
+                        android:textSize="20dp"
+                        android:drawableStart="@drawable/ic_india_rupee_currency_symbol"
+                        android:drawableTint="@color/pricegreen"
+                        android:maxLines="2"
+                        android:textAlignment="center"
+                        android:ellipsize="end"
+                        android:textColor="@color/pricegreen"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_to_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Add To Cart"
+                    android:background="@drawable/add_to_cart_background"
+                    android:textSize="15dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/serif_family"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
